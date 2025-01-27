@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    padding: 0.5rem 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        border-bottom: 1px solid #575757;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 16px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 16px);
+    max-width: 300px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.card h3 {
+    margin: 16px 0 8px;
+    font-size: 1.2em;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 16px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light gray-blue background */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 16px;
+}
+
+.card {
+    background-color: #ffffff; /* White card background */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 16px);
+    max-width: 300px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.card h3 {
+    margin: 16px 0 8px;
+    font-size: 1.2em;
+    color: #333; /* Dark gray for the title */
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #666; /* Medium gray for the description */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
+
+/* Add some variation in background colors for cards */
+.card:nth-child(odd) {
+    background-color: #f9f9f9; /* Light gray for odd cards */
+}
+
+.card:nth-child(even) {
+    background-color: #f1f8ff; /* Light blue for even cards */
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 16px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+/* Set the page to use the full height and a light background */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+}
+
+/* Use Flexbox to center the form */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Full screen height */
+}
+
+/* Style the login form */
+.login-form {
+    background-color: white; /* White background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 300px; /* Fixed width */
+}
+
+/* Make the heading stand out */
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style input fields and labels */
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.login-form input {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Style the login button */
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Add hover effect for the button */
+.login-form button:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+/* Reset body and html styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+}
+
+/* Gallery container */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Space between items */
+    justify-content: center; /* Center items */
+    padding: 20px;
+}
+
+/* Individual gallery item */
+.gallery-item {
+    flex: 1 1 calc(33.33% - 16px); /* Each item takes up 1/3 of the container */
+    max-width: calc(33.33% - 16px); /* Prevents the item from exceeding 1/3 of the container */
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    width: 100%; /* Make image fill the container */
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 16px); /* Two items per row on smaller screens */
+        max-width: calc(50% - 16px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%; /* One item per row on very small screens */
+        max-width: 100%;
+    }
+}
+/* Flex container with space distribution */
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribute items with space between */
+    gap: 20px;                      /* Gap between items */
+    background-color: #e0f7fa;
+}
+
+.item {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    border-radius: 4px;
+    width: 200px;
+}
